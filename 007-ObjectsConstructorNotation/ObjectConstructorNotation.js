@@ -18,8 +18,7 @@ function Hotel(
         street: street,
         number: number,
         city: city,
-        country,
-        country,
+        country: country,
     };
     this.checkAvailability = function () {
         return this.rooms - this.booked;
