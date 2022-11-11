@@ -12,3 +12,5 @@ console.log("\n");
 
 const one2 = document.querySelector("#three");
 console.log(one2);
+
+one1.addEventListener("click", () => console.log(this));
