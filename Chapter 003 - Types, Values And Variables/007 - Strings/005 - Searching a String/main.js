@@ -16,15 +16,14 @@ function countChar(msg, char) {
     let index = 0;
     let count = 0;
 
-    for (let i = 0; i < msg.length; i++) {
-        if (msg.indexOf(char, index) > -1) {
-            index = msg.indexOf(char, index) + 1;
-            count++;
-        }
+    while (msg.indexOf(char, index) !== -1) {
+        index = msg.indexOf(char, index) + 1;
+        count++;
     }
-
     return count;
 }
 
 console.log(countChar(msg1, "l"));
 console.log(countChar(msg1, "o"));
+console.log(countChar(msg1, "A"));
+console.log(countChar(msg1, "e"));
