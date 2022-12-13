@@ -9,9 +9,9 @@ console.log(msg1.lastIndexOf("l")); //Return the last index of the substring in 
 console.log();
 
 function countChar(msg, char) {
-    if (typeof msg !== "string") throw TypeError("Parameter must be a string");
+    if (typeof msg !== "string") throw TypeError("Argument must be a string");
     if (typeof char !== "string" || char.length !== 1)
-        throw TypeError("Parameter must be a char with length of 1");
+        throw TypeError("Argument must be a char with length of 1");
 
     let index = 0;
     let count = 0;
