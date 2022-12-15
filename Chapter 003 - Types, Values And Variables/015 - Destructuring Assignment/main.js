@@ -29,3 +29,6 @@ const myObj = {
 
 const [myName, age, ...rest] = Object.keys(myObj);
 console.log(myName, age, rest);
+console.log();
+
+console.log(...[1, 2.3, 3, 4, 5, 6, 7, 8, 9]);
